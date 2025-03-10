@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<title>Portfolio</title>
+</head>
+<body>
+    <header>
+    <nav class="menu"> <!-- burger-menu -->
+        <h1>Malla Siltala</h1>
+        <div class="burger" onclick="toggleMenu()"> <!-- burger-menun klikkaustoiminto -->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links"> <!-- burger-menun linkit -->
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- burger-menun klikkaustoiminnon script -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+    </header>
+
+<div class="content">  <!-- sivun sisältö -->
+    <div class="portfolio-esittely"> <!-- sivun tekstiosio -->
+        <h2>PORTFOLIO</h2>
+        <p>Olen harrastanut rakennekynsien tekoa vuodesta 2020 lähtien. Täältä näet tekemiäni töitä.</p>
+    </div>
+    <div class="portfolio"> <!-- valokuvagalleria -->
+        <div class="gallery">
+            <img src="https://i.postimg.cc/kMfT0PjT/IMG-0232.jpg" alt="merenneitokynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/DypYX3LS/IMG-0238.jpg" alt="kimaltavatkynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/prXqmsdQ/IMG-8461.jpg" alt="kukkakynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/W4g9CDKZ/IMG-8467.jpg" alt="timanttikynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/kgk1TNj9/IMG-8653.jpg" alt="morsiuskynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/nzxdJFbP/IMG-8747.jpg" alt="pinkitkynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/85bZk2TP/IMG-8811.jpg" alt="kimaltavanude" class="gallery-img">
+            <img src="https://i.postimg.cc/9081Zy46/IMG-9454.jpg" alt="mustapunaisetkynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/ncr3ZSgp/IMG-9458.jpg" alt="tummanpunaisetkynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/mgFV1zTn/IMG-9530.jpg" alt="seittikynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/YqPbSfBg/IMG-9611.jpg" alt="kimaltavamustakynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/76qNRKSv/IMG-9834.jpg" alt="punainenranskis" class="gallery-img">
+            <img src="https://i.postimg.cc/rFv0S6Df/IMG-8242.jpg" alt="karkkikynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/XvSLfjJY/IMG-9916.jpg" alt="kimaltavapunainenkynnet" class="gallery-img">
+            <img src="https://i.postimg.cc/mrYwVvzN/IMG-9987.jpg" alt="sininenranskis" class="gallery-img">
+        </div>
+    
+        <!-- Lightbox Overlay -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-btn">&times;</span>
+            <img src="" id="lightbox-img">
+        </div>
+    <!-- linkkaus lightbox script -->
+        <script src="script.js"></script>
+    </div>
+</div>
+<div class="footer">
+    <p>Seuraa minua</p>
+    <div class="some-button">
+    <a href="https://www.linkedin.com/in/malla-siltala" target="_blank">
+    <img src="https://i.postimg.cc/85v8Xm2S/In-Bug-White.png" alt="linkedin">
+    </a>
+</div>
+<footer></footer>
+</div>
+<!-- lightbox script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const closeBtn = document.querySelector(".close-btn");
+    
+        document.querySelectorAll(".gallery-img").forEach(img => {
+            img.addEventListener("click", function () {
+                lightbox.style.display = "flex";
+                lightboxImg.src = this.src;
+            });
+        });
+    
+        closeBtn.addEventListener("click", function () {
+            lightbox.style.display = "none";
+        });
+    
+        lightbox.addEventListener("click", function (e) {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = "none";
+            }
+        });
+    });
+    </script>
+</body>
+</html>

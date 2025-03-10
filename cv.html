@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<title>Ansioluettelo</title>
+</head>
+<body>
+    <header>
+    <nav class="menu"> <!-- burger-menu -->
+        <h1>Malla Siltala</h1>
+        <div class="burger" onclick="toggleMenu()"> <!-- burger-menun klikkaustoiminto -->
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links"> <!-- burger-menun linkit -->
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- burger-menun klikkaustoiminnon script -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+    </header>
+
+<div class="content"> <!-- sivun sisältö -->
+<div class="portrait"> <!-- Valokuva -->
+<div class="portrait-container"> <!-- valokuvan sijoitukseen tehty div -->
+<img src="https://i.postimg.cc/zvBFz3d0/IMG-3481.jpg" alt="Malla">
+</div>
+<h4>KIELITAITO</h4>
+    <dl>
+        <dt>suomi</dt>
+        <dd>äidinkieli</dd>
+        <dt>englanti</dt>
+        <dd>erinomainen</dd>
+      </dl>
+</div>
+<div class="esittely-container">
+    <h2>TYÖKOKEMUS</h2>
+    <h3>Assistant</h3>
+    <h4>Black Donuts Inc.</h4>
+    <p>2.4.2024-</p>
+    <p>Työhöni kuuluu vieraiden vastaanottaminen ja kokoustarjoiluista huolehtiminen, toimiston juoksevien asioien hoitaminen, tarvikehankinnat, sopimusarkiston ylläpito, matkahallinnon avustavat tehtävät kuten matkalaskujen käsittely, postitus, henkilöstötapahtumien järjestäminen, HR:n avustavat tehtävät</p>
+    <h3>Makeup Artist</h3>
+    <h4>Estee Lauder Finland Oy</h4>
+    <p>27.9.2017-31.3.2024</p>
+    <p>Työhöni kuului asiakaspalvelu, tavoitteellinen ratkaisumyynti myyntilattialla, asiakkaalle räätälöityjen palveluiden toteuttaminen sekä markkinointi sosiaalisessa mediassa. Sen lisäksi olin vastuussa myyntipisteen toiminnasta, varaston saldosta ja asiakassuhteiden ylläpidosta. Raportointi ja kommunikointi kuului työhöni päivittäin suomeksi ja englanniksi. Pääsin toteuttamaan asiakasiltoja ja koulutuksia, joissa esiintymiskyky on tärkeää. Työssä onnistumiseen vaaditaan oma-alotteista otetta, erinomaista paineensietokykyä, spontaanisuuta, joustamista ja hyviä kommunikointitapoja.</p>
+    <h3>Myyjä</h3>
+    <h4>S-Market Valkeakoski</h4>
+    <p>2.6.2014-26.9.2017</p>
+    <p>Työhöni kuului asiakaspalvelu kaikilla myymälän osastoilla sekä hyllytys ja myyntitavaran purku. Työskentelin tuoreiden ruokien kanssa, sekä valmistin myytäviä ruokia tuoreruokatiskille. Toimin käyttötavaravastaavan lomittajana.</p>
+    <h2>KOULUTUS</h2>
+    <h3>Tradenomi, Tietojenkäsittely</h3>
+    <h4>Haaga Helia University of Applied Sciences</h4>
+    <p>01/2025-2027 (arvio)</p>
+    <h3>Liiketalouden Avoimen Sprintti</h3>
+    <h4>HAMK University of Applied Sciences</h4>
+    <p>11/2023-12/2024</p>
+    <p>Liiketalouden avoimen AMK polkuopinnot</p>
+    <h3>Liiketalouden perustutkinto</h3>
+    <h4>Valkeakosken Ammattiopisto VAAO</h4>
+    <p>08/2011-05/2014</p>
+    <p>Asiakaspalvelu ja myynti</p>
+</div>
+</div>
+<div class="footer">
+    <p>Seuraa minua</p>
+    <div class="some-button"> <!-- linked in nappula -->
+    <a href="https://www.linkedin.com/in/malla-siltala" target="_blank">
+    <img src="https://i.postimg.cc/85v8Xm2S/In-Bug-White.png" alt="linkedin">
+    </a>
+</div>
+<footer></footer>
+</div>
+</body>
+</html>
