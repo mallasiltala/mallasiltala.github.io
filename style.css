@@ -1,7 +1,5 @@
 body {
     font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
   font-variation-settings: "wdth" 100;
     margin: 0;
@@ -120,8 +118,6 @@ body {
     width: 100%;
     border-radius: 10px;
     flex-shrink: 0;
-    position: center;
-    
 }
 
 /* kuvakarusellin nappulat */
@@ -189,6 +185,11 @@ body {
     width: 100%;
 }
 
+.esittely p {
+    margin-top: 20px;
+}
+    
+
 .footer {
     width: 100%;
     clear: both;
@@ -207,7 +208,7 @@ body {
     margin: auto;
     margin-top: 30px;
     position: relative;
-    background: rgba(180, 139, 120, 0.5);
+    background: rgba(116, 88, 77, 0.9);
     border: none;
     color: white;
     padding: 10px 20px;
@@ -228,7 +229,6 @@ body {
 .content {
     width: 80%;
     position: relative;
-    float: center;
     margin: auto;
    padding-top: 30px;
 }
@@ -277,7 +277,7 @@ body {
     .nappula {
         width: 50%;
         float: none;
-        margin: 20 auto;
+        margin: 20px auto;
         display: block;
   }
   .menu {
@@ -339,7 +339,7 @@ body {
     .nappula {
         width: 50%;
         float: none;
-        margin: 20 auto;
+        margin: 20px auto;
         display: block;
     }
     .menu {
